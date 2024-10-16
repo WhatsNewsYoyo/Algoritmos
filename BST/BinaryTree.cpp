@@ -45,6 +45,7 @@ void BinaryTree::inOrderTraversal(Node* node) {
     if (node == nullptr) {
         return;
     }
+    
     inOrderTraversal(node->left);
     cout << node->data<<" ";
     inOrderTraversal(node->right);
@@ -54,6 +55,7 @@ void BinaryTree::preOrderTraversal(Node* node) {
     if (node == nullptr) {
         return;
     }
+    
     cout << node->data <<" ";
     preOrderTraversal(node->left);
     preOrderTraversal(node->right);
@@ -63,6 +65,7 @@ void BinaryTree::postOrderTraversal(Node* node) {
     if (node == nullptr) {
         return;
     }
+    
     postOrderTraversal(node->left);
     postOrderTraversal(node->right);
     cout << node->data <<" ";
